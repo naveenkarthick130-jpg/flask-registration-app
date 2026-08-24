@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS users (
 """
 
 cursor.execute(sql)
+cursor.execute("drop users" )
 
 db.commit()
 

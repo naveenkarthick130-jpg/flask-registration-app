@@ -19,7 +19,7 @@ print("Connected successfully!")
 cursor = db.cursor()
 
 cursor.execute("SELECT * FROM users")
-cursor.execute("drop users" )
+
 
 users = cursor.fetchall()
 
