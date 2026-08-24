@@ -16,6 +16,7 @@ db = mysql.connector.connect(
 print("Connected successfully!")
 
 cursor = db.cursor()
+cursor.execute("DROP TABLE users")
 
 sql = """
 CREATE TABLE IF NOT EXISTS users (
@@ -28,7 +29,7 @@ CREATE TABLE IF NOT EXISTS users (
 """
 
 cursor.execute(sql)
-cursor.execute("drop users" )
+
 
 db.commit()
 
