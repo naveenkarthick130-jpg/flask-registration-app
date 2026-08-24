@@ -49,7 +49,7 @@ def register():
 
     cursor.close()
 
-    return "Registration successful!"
+    return render_template("success.html", name=name)
 
 
 if __name__ == "__main__":
